@@ -1,0 +1,2 @@
+# Solo para la prueba opcional e2e/smoke.py
+playwright>=1.40

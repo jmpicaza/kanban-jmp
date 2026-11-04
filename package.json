@@ -1,0 +1,27 @@
+{
+  "name": "tablero-ws8",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Kanban personal WS8: React compilado a public/app.js y servido por server/server.py",
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "start": "python3 server/server.py",
+    "dev": "node scripts/dev.mjs",
+    "build": "node scripts/build.mjs",
+    "test": "npm run test:js && npm run test:py",
+    "test:js": "node --test",
+    "test:py": "python3 -m unittest discover -s server -p \"test_*.py\"",
+    "setup:e2e": "python3 -m venv .venv && .venv/bin/pip install -r requirements-dev.txt && .venv/bin/playwright install chromium",
+    "test:e2e": ".venv/bin/python e2e/smoke.py"
+  },
+  "dependencies": {
+    "react": "^19.2.0",
+    "react-dom": "^19.2.0"
+  },
+  "devDependencies": {
+    "esbuild": "^0.27.0"
+  }
+}

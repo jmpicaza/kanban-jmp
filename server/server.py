@@ -1,8 +1,8 @@
 #!/usr/bin/env python3
 """Servidor local del tablero WS8. Solo librería estándar de Python 3.
 
-Uso:   python3 server/server.py [puerto]        (por defecto 8000)
-Abre:  http://localhost:8000
+Uso:   python3 server/server.py [puerto]        (por defecto 8742)
+Abre:  http://localhost:8742
 
 - Sirve la carpeta public/.
 - API de datos: GET y PUT en /api/kv/<clave>. Cada clave se guarda en data/<clave>.json
@@ -97,7 +97,7 @@ def make_server(port, data_dir=DATA_DIR, public_dir=PUBLIC_DIR):
 
 
 def main():
-    port = int(sys.argv[1]) if len(sys.argv) > 1 else 8000
+    port = int(sys.argv[1]) if len(sys.argv) > 1 else 8742
     srv = make_server(port)
     print(f"Tablero en http://localhost:{port}  (Ctrl+C para parar)", flush=True)
     print(f"Datos en {DATA_DIR}", flush=True)

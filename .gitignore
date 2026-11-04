@@ -6,3 +6,5 @@ node_modules/
 __pycache__/
 public/*.map
 .venv/
+*Zone.Identifier
+*Zone.Identifier

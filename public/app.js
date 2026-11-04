@@ -24484,7 +24484,7 @@
   function Header({ today, saveMsg, hideDone, onNew, onBulk, onExport, onImport, onSort, onToggleDone }) {
     return /* @__PURE__ */ (0, import_jsx_runtime8.jsxs)("div", { className: "kb-top", children: [
       /* @__PURE__ */ (0, import_jsx_runtime8.jsxs)("div", { children: [
-        /* @__PURE__ */ (0, import_jsx_runtime8.jsx)("h1", { children: "Tablero personal WS8" }),
+        /* @__PURE__ */ (0, import_jsx_runtime8.jsx)("h1", { children: "Tablero personal Meridian" }),
         /* @__PURE__ */ (0, import_jsx_runtime8.jsxs)("div", { className: "kb-sub", children: [
           "Tablero personal. Hoy: ",
           fmtDate(today),

@@ -4,7 +4,7 @@ export default function Header({ today, saveMsg, hideDone, onNew, onBulk, onExpo
   return (
     <div className="kb-top">
       <div>
-        <h1>Tablero personal WS8</h1>
+        <h1>Tablero personal Meridian</h1>
         <div className="kb-sub">Tablero personal. Hoy: {fmtDate(today)}.</div>
       </div>
       <div className="kb-actions">

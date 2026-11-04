@@ -3,7 +3,7 @@
 # Uso: ./install-service.sh [puerto]
 set -euo pipefail
 DIR="$(cd "$(dirname "$0")" && pwd)"
-PORT="${1:-8000}"
+PORT="${1:-8742}"
 
 if ! command -v systemctl >/dev/null || ! systemctl --user show-environment >/dev/null 2>&1; then
   echo "systemd de usuario no está disponible. En WSL activa systemd (ver README, paso 0)." >&2

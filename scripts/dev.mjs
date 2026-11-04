@@ -6,7 +6,7 @@ import { developmentOptions } from "./esbuild.config.mjs";
 const ctx = await esbuild.context(developmentOptions);
 await ctx.watch();
 
-const server = spawn(process.env.PYTHON || "python3", ["server/server.py", process.env.PORT || "8000"], { stdio: "inherit" });
+const server = spawn(process.env.PYTHON || "python3", ["server/server.py", process.env.PORT || "8742"], { stdio: "inherit" });
 const stop = async () => {
   server.kill();
   await ctx.dispose();

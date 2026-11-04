@@ -37,7 +37,7 @@ install-service.sh    instala el servicio de systemd (WSL)
 ## Usar (sin Node)
 
 ```bash
-python3 server/server.py        # http://localhost:8000   (otro puerto: ... server.py 8123)
+python3 server/server.py        # http://localhost:8742   (otro puerto: ... server.py 8123)
 ```
 
 ## Desarrollar
@@ -104,7 +104,7 @@ CONF
 Después, desde PowerShell: `wsl --shutdown`, y volver a abrir WSL.
 
 ```bash
-./install-service.sh                       # instala y arranca (puerto 8000)
+./install-service.sh                       # instala y arranca (puerto 8742)
 systemctl --user status tablero-ws8
 journalctl --user -u tablero-ws8 -f        # logs
 systemctl --user restart tablero-ws8       # tras actualizar
